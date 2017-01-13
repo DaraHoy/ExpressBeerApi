@@ -1,0 +1,37 @@
+1. npm init will establish a package.json
+    TIP: gitignore will ignore node_module when you use npm install also good for files containing sensitive data
+
+2. $npm install --save mongoose express body-parser
+
+3. Call the packages you need:
+    var express    = require('express');        // call express
+    var app        = express();                 // define our app using express
+    var bodyParser = require('body-parser');
+    var mongoose   = require("mongoose");
+
+4. Plan your model. We are going to create one model to start off with, called Beer.
+The Beer model will have a name, kind and price. What do you think the datatype for price should be?
+Create the model in the app/models directory.
+
+5. Create Schema:
+
+    *********************************
+    var mongoose = require("mongoose");
+    var Schema = mongoose.Schema;
+
+    var BeerSchema = new Schema({
+    name: String,
+    kind: String,
+    price: Number
+    });
+
+    module.exports = mongoose.model('Beer', BeerSchema);
+    ***********************************
+
+    TIP: $ mkdir -p dir/subdir will create both dir and its sub.
+    TIP: how to deal with monetary data in mongodb
+    https://docs.mongodb.com/manual/tutorial/model-monetary-data/
+
+6. After creating a dir for your beer.js file you then require it in your server.js var Beer       = require(./app/models/beer);
+
+7.  

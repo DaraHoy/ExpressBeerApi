@@ -1,0 +1,19 @@
+[
+  {
+  "name": "Hoegarden",
+  "kind": "Belgium Ale",
+  "price": 5
+ },{
+ "name": "Guiness",
+ "kind": "Stout",
+ "price": 5
+},{
+"name": "Heinekin",
+"kind": "Lager",
+"price": 5
+},{
+"name": "Golden Monkey Tripel",
+"kind": "IPA",
+"price": 10
+},
+]

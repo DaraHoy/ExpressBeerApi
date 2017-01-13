@@ -4,9 +4,25 @@
   "description": "CRUD Beer",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.6"
+  },
+  "engines": {
+    "node": "4.7.2"
   }
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaraHoy/ExpressBeerApi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DaraHoy/ExpressBeerApi/issues"
+  },
+  "homepage": "https://github.com/DaraHoy/ExpressBeerApi#readme"
 }
